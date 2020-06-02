@@ -17,6 +17,10 @@
     "start": "piral debug",
     "build": "piral build"
   },
+  "staticFiles": {
+    "staticPath": "src/public",
+    "watcherGlob": "**"
+  },
   "app": "./src/index.html",
   "pilets": {
     "files": [],
@@ -35,6 +39,7 @@
     "@types/react-dom": "latest",
     "@types/react-router": "latest",
     "@types/react-router-dom": "latest",
+    "parcel-plugin-static-files-copy": "^2.3.1",
     "piral-cli": "next",
     "piral-cli-parcel": "^0.11.5-pre.1204",
     "sass": "^1.26.5",
