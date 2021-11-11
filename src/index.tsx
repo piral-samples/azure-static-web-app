@@ -9,7 +9,7 @@ const feedUrl = 'https://feed.piral.cloud/api/v1/pilet/blazor-demo';
 renderInstance({
   layout,
   errors,
-  extendApi: [createBlazorApi()],
+  plugins: [createBlazorApi()],
   requestPilets() {
     return fetch(feedUrl)
       .then(res => res.json())
